@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Page dynamique avec l'heure (Javascript)</title>
+	</head>
+	<body>
+		L'heure est: <span id="heure"></span>
+		<!-- Code Javascript directement dans la page : -->
+		<script>
+			// on définit une fonction qui place l'heure courante dans la balise ayant l'id "heure"
+			function afficherHeure() {
+				var emplacement = document.getElementById('heure');
+				var d = new Date();
+				//alert(d.toLocaleString());
+				// Attention au nom de la propriété : innerHTML (les majuscules sont importantes !)
+				emplacement.innerHTML = d.toLocaleString();
+			}
+			// on l'appelle une première fois au chargement de la page
+			afficherHeure();
+			// on l'appelle ensuite une fois par seconde
+			setInterval(afficherHeure, 1000);
+		</script>
+
+		<!-- version dans un fichier séparé : -->
+		<!--<script src="heure.js"></script>-->
+	</body>
+</html>

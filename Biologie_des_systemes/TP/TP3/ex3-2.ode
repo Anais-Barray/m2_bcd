@@ -1,0 +1,16 @@
+#conditions initiales 
+p1(0)=2 
+p2(0)=0 
+p3(0)=0 
+p4(0)=0
+
+#parametres 
+param k1=1, km1=1, k2=1, k3=1, km3=1 
+
+#equation 
+p1'=-k2*(p1-p2)/(1+1*km1/k1)
+p2'=-(k1+km1)*p2+k2*p1*(km1/k1)
+p3'=k2*(p1-p2)/(1+1*km1/k1)
+p4'=-(km3+k3)*p3+k2*p2
+
+done

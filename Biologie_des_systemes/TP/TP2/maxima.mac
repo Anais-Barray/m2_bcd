@@ -1,0 +1,8 @@
+F1(x,y):=(x*(2-x-y));
+F1x(x,y):=''(diff(F1(x,y),x));
+F1y(x,y):=''(diff(F1(x,y),y));
+F2(x,y):=(x-y);
+F2x(x,y):=''(diff(F2(x,y),x));
+F2y(x,y):=''(diff(F2(x,y),y));
+m:matrix([F1x(1,1),F1y(1,1)],[F2x(1,1),F2y(1,1)]),float;
+eigenvalues(m),float;

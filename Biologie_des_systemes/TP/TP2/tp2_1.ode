@@ -1,0 +1,8 @@
+R(0)=1
+J(0)=1
+
+param a=-3, b=-10 c=10, d=3
+R'= a*R + b*J
+J'= c*R + d*J
+
+done

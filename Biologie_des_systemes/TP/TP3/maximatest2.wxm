@@ -1,0 +1,25 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 13.04.2 ] */
+
+/* [wxMaxima: input   start ] */
+F1(x,y,z):=-1*x*y+1*z;
+F1x(x,y,z):=''(diff(F1(x,y,z),x));
+F1y(x,y,z):=''(diff(F1(x,y,z),y));
+F1z(x,y,z):=''(diff(F1(x,y,z),z));
+
+F2(x,y,z):=-1*x*y+1*z;
+F2x(x,y,z):=''(diff(F2(x,y,z),x));
+F2y(x,y,z):=''(diff(F2(x,y,z),y));
+F2z(x,y,z):=''(diff(F2(x,y,z),z));
+
+F3(x,y,z):=1*x*y-1*z;
+F3x(x,y,z):=''(diff(F3(x,y,z),x));
+F3y(x,y,z):=''(diff(F3(x,y,z),y));
+F3z(x,y,z):=''(diff(F3(x,y,z),z));
+
+m:matrix([F1x(0.62,0.62,0.38),F1y(0.62,0.62,0.38),F1z(0.62,0.62,0.38)],[F2x(0.62,0.62,0.38),F2y(0.62,0.62,0.38),F2z(0.62,0.62,0.38)],[F3x(0.62,0.62,0.38),F3y(0.62,0.62,0.38),F3z(0.62,0.62,0.38)]),float;
+eigenvalues(m),float;
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

@@ -1,0 +1,6 @@
+//calcul nos équations et stock résultats dans variable
+k:1, kmi:1, ki:1, n:5;
+variable : solve([k*s*e=0, ki*e*i^n-kmi*x=0, s+p-1=0, e+x-1=0, n*x+i-1=0],[s,e,p,i,x]);
+
+//affiche notre variable après transformation en float
+variable,float;

@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 13.04.2 ] */
+
+/* [wxMaxima: input   start ] */
+ku:1;
+kum:1;
+kd:1;
+kdm:1;
+
+toto:solve([ku*v*w-kum*x=0, kd*x - kdm*y*z = 0 , v + x + y = 1, w + x + y = 1, v + x + z = 1],[v,w,x,y,z]);
+toto[1],float;
+
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

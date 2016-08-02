@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<script type="text/javascript" src="tp6_1.js"></script>
+		<title>Compte à rebours (Javascript)</title>
+	</head>
+	<body>
+		<fieldset>
+			
+			<legend>Timer</legend></br>
+			<div id='datediv'></div>
+			</br>
+			Compteur (sec)
+			<input type="number" id="compteur" name="compteur" placeholder="ex : 10 sec"></br></br>
+			<br/>
+			<button onClick="start()">Start</button>
+			<button onClick="stop()">Stop</button>
+			<button onClick="reset()">Reset</button>
+			<br/>
+			<div id="message" style="color: red; font-weight: bold; font-size: 40px; display: none; animation: blink 1s steps(5, start) infinite; -webkit-animation: blink 1s steps(5, start) infinite; -moz-animation: blink 0.5s linear infinite;">
+				Temps écoulé
+			</div>
+		
+		</fieldset>
+	</body>
+</html> 
+
+

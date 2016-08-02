@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>TD 4 - Formulaire</title>
+	</head>
+	<body>
+		<form action="traitement.php" method="POST">
+			<p>
+				<label>Destinataire :</label>
+				<select name="destinataire">
+					<option value="servicecli@mon-super-site.org">Service client</option>
+					<option value="servicetech@mon-super-site.org">Service technique</option>
+					<option value="grosbarbu@mon-super-site.org">Webmaster</option>
+				</select>
+			</p>
+			<p>
+				<label>Nom :</label>
+				<input type="text" name="nom" placeholder="Ex: Jean Dupont" />
+			</p>
+			<p>
+				<label>Objet du message :</label>
+				<input type="text" name="objet" placeholder="Ex: demande de renseignements" />
+			</p>
+			<p>
+				<label>Format du message :</label><br/>
+				<input type="radio" name="format" value="html" /> HTML
+				<input type="radio" name="format" value="texte" checked /> texte brut
+			</p>
+			<p>
+				<label>Message :</label><br/>
+				<textarea name="message" style="width: 400px; height: 200px;"></textarea>
+			</p>
+			<input type="submit" value="Cliquez ici pour envoyer le message" />
+		</form>
+	</body>
+</html>

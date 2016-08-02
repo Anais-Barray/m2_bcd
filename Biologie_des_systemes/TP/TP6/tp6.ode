@@ -1,0 +1,27 @@
+#conditions initiales 
+x(0)=0
+xs(0)=0
+xsay(0)=0
+xsaz(0)=0 
+y(0)=0
+ys(0)=0
+ysaz(0)=0
+z(0)=0
+
+#parametres 
+param kx=10, kmx=10, ky=10, kmy=10, kz=10, kmz=10, k2=10, km2=10, k3=10, km3=10, k4=10, km4=10, k5=10, km5=10, k6=10, km6=10, Kxy=2, Kxz=2, Kyz=0.2, Smax=10, Sy=10, n=30, m=40, ti=1, grandT=5
+
+#equation 
+x'=kx + km2*xs -k2*x -Sx(t)*x -kmx*x
+xs'=k2*x + Sx(t)*x - km2*xs - k3*xs + km3*xsay - k5*xs + km5*xsaz
+xsay'=k3*xs - km3*xsay
+xsaz'=k5*xs - km5*xsaz
+y'=ky*(((xsay/Kxy)**n)/(1+(xsay/Kxy)**n)) - kmy*y - (k4 + Sy)*y + km4*ys
+ys'=(k4+Sy)*y - km4*ys - k6*ys + km6*ysaz
+ysaz'=k6*ys - km6*ysaz
+z'=kz*(((xsaz/Kxz)**n)/(1+(xsaz/Kxz)**n)) * (((ysaz/Kyz)**n)/(1+(ysaz/Kyz)**n)) - kmz*z
+Sx(t)=Smax * (((t/ti)**m)/((1+(t/ti)**m))) * (1/(1+(t/(ti+grandT))**m))
+
+
+done
+

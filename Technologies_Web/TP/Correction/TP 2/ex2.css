@@ -1,0 +1,123 @@
+/* feuille de style pour "tp2_1.html" */
+
+/* règles pour l'exercice 1: */
+
+body {
+	font-family: Ubuntu, Verdana;
+	font-size: 1.2em;
+	color: #404040;
+}
+
+#menu-bloc {
+	background-color: grey;
+	border: dotted black 1px;
+	border-radius: 15px;
+	padding: 10px; /* non demandé */
+}
+
+#main-bloc p {
+	text-align: justify;
+	text-indent: 20px;
+}
+
+#titre-principal {
+	text-transform: uppercase;
+	color: red;
+	text-align: center;
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+a:visited {
+	color: green;
+}
+
+/* règles pour l'exercice 2: */
+
+body {
+	padding: 40px;
+}
+
+#menu-bloc div.menu {
+	display: inline-block;
+	padding: 12px;
+}
+
+#main-bloc {
+	margin-top: 20px;
+	border: solid red 1px;
+}
+
+#main-bloc {
+	display: inline-block;
+	padding: 14px;
+	padding-left: 50px;
+	max-width: 65%;
+}
+
+.illustration {
+	float: right;
+}
+
+aside {
+	margin-top: 20px;
+	border: solid blue 1px;
+	display: inline-block;
+	padding: 14px;
+	width: 20%;
+	text-align: center;
+	vertical-align: top;
+}
+
+aside > div {
+	margin-bottom: 10px;
+}
+
+#titre-principal {
+	text-align: left;
+	margin-bottom: 50px;
+}
+
+/* règles pour l'exercice 3: */
+
+#indicateur-taille {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	width: 300px;
+	height: 60px;
+	background-color: white;
+	border: solid red 2px;
+	padding: 10px;
+}
+
+#indicateur-taille > #taille-petit {
+	color: blue;
+}
+
+#indicateur-taille > #taille-grand {
+	color: green;
+}
+
+@media screen and (min-width: 1024px) {
+	#indicateur-taille > #taille-petit {
+		display: none;
+	}
+	#indicateur-taille > #taille-grand {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#indicateur-taille > #taille-petit {
+		display: block;
+	}
+	#indicateur-taille > #taille-grand {
+		display: none;
+	}
+}
+

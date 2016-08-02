@@ -1,0 +1,140 @@
+body {
+    margin: 0 0 80px; 
+    background: #FDCBCB;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    
+}
+ul {
+  list-style:none;
+}
+.ul_formAj{
+	padding:0;
+}
+
+.tog {
+    display: none;
+}
+
+.rouge {
+    color: red;
+}
+
+.capit {
+    text-transform: capitalize;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+	background-color: #FFDEDE;
+}
+
+.col-0 {
+    display: none;
+}
+.formulaireAjout {
+	width: 504px;
+
+}
+
+.formulaireAjout label
+{
+	width: 200px;
+}
+
+.formulaireAjout .btn-ajout{
+	float:right;
+}
+
+.formulaireAjout input, .formulaireAjout textarea {
+	width: 300px;
+}
+.commentaire{
+	vertical-align:top;
+}
+
+.div_liste td, .div_liste th{
+	text-align: center;
+}
+
+
+/* CSS DU MENU */
+.wrap {
+  position:relative;
+  margin:auto;
+
+}
+#nav {
+  color:#477AC7;
+}
+#nav ul {
+  background-color:#FFDEDE;
+  display:inline;
+  padding:9px;
+  border: 2px solid #FFFFFF;
+}
+#nav li{
+  background-color:#FDCBCB;
+  display:inline;
+  line-height:4.0;
+  padding:4px;
+  margin:5px;
+  border: 2px solid #FFFFFF;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+#nav li a{
+  text-decoration: none;      
+  color:inherit;
+}
+
+#nav li a:hover{
+    color: white;
+}
+
+#nav .wrap {
+    text-align:center; 
+
+}
+
+.div_index {
+    position:relative;
+    text-align:center;
+}
+.div_index p{
+   font-size:120%;
+}
+.div_liste{
+	margin-top:40px;
+}
+
+/* CSS POUR TAILLE D'ECRAN */
+@media screen and (max-width: 720px) {
+/* Ajuste les informations du tableau en fonction de la taille d'écran : affiche +/- de colonne en fonction de leur importance. Ajuste la taille de la police */    
+     
+    .col-3,.col-4,.col-6,.col-8,.col-9 {
+        display: none;
+    }
+    .table-petit, .wrap  {
+        font-size: xx-small;
+    }
+}
+@media screen and (max-width: 850px) {
+     
+    .col-6 {
+        display: none;
+    }
+    .table-petit{
+        font-size: small;
+    }
+}

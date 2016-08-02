@@ -1,0 +1,50 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 13.04.2 ] */
+
+/* [wxMaxima: input   start ] */
+F1(v,w,x,y,z):=-v*w+x;
+F1v(v,w,x,y,z):=''(diff(F1(v,w,x,y,z),v));
+F1w(v,w,x,y,z):=''(diff(F1(v,w,x,y,z),w));
+F1x(v,w,x,y,z):=''(diff(F1(v,w,x,y,z),x));
+F1y(v,w,x,y,z):=''(diff(F1(v,w,x,y,z),y));
+F1z(v,w,x,y,z):=''(diff(F1(v,w,x,y,z),z));
+
+
+F2(v,w,x,y,z):=-v*w+x;
+F2v(v,w,x,y,z):=''(diff(F2(v,w,x,y,z),w));
+F2w(v,w,x,y,z):=''(diff(F2(v,w,x,y,z),v));
+F2x(v,w,x,y,z):=''(diff(F2(v,w,x,y,z),x));
+F2y(v,w,x,y,z):=''(diff(F2(v,w,x,y,z),y));
+F2z(v,w,x,y,z):=''(diff(F2(v,w,x,y,z),z));
+
+
+F3(v,w,x,y,z):=v*w-x-x+y*z;
+F3v(v,w,x,y,z):=''(diff(F3(v,w,x,y,z),v));
+F3w(v,w,x,y,z):=''(diff(F3(v,w,x,y,z),w));
+F3x(v,w,x,y,z):=''(diff(F3(v,w,x,y,z),x));
+F3y(v,w,x,y,z):=''(diff(F3(v,w,x,y,z),y));
+F3z(v,w,x,y,z):=''(diff(F3(v,w,x,y,z),z));
+
+
+F4(v,w,x,y,z):=-y*z+x;
+F4v(v,w,x,y,z):=''(diff(F4(v,w,x,y,z),v));
+F4w(v,w,x,y,z):=''(diff(F4(v,w,x,y,z),w));
+F4x(v,w,x,y,z):=''(diff(F4(v,w,x,y,z),x));
+F4y(v,w,x,y,z):=''(diff(F4(v,w,x,y,z),y));
+F4z(v,w,x,y,z):=''(diff(F4(v,w,x,y,z),z));
+
+
+F5(v,w,x,y,z):=-y*z+x;
+F5v(v,w,x,y,z):=''(diff(F5(v,w,x,y,z),v));
+F5w(v,w,x,y,z):=''(diff(F5(v,w,x,y,z),w));
+F5x(v,w,x,y,z):=''(diff(F5(v,w,x,y,z),x));
+F5y(v,w,x,y,z):=''(diff(F5(v,w,x,y,z),y));
+F5z(v,w,x,y,z):=''(diff(F5(v,w,x,y,z),z));
+
+
+m:matrix([F1v(0.414,0.414,0.171,0.414,0.414),F1w(0.414,0.414,0.171,0.414,0.414),F1x(0.414,0.414,0.171,0.414,0.414),F1y(0.414,0.414,0.171,0.414,0.414),F1z(0.414,0.414,0.171,0.414,0.414)],[F2v(0.414,0.414,0.171,0.414,0.414),F2w(0.414,0.414,0.171,0.414,0.414),F2x(0.414,0.414,0.171,0.414,0.414),F2y(0.414,0.414,0.171,0.414,0.414),F2z(0.414,0.414,0.171,0.414,0.414)],[F3v(0.414,0.414,0.171,0.414,0.414),F3w(0.414,0.414,0.171,0.414,0.414),F3x(0.414,0.414,0.171,0.414,0.414),F3y(0.414,0.414,0.171,0.414,0.414),F3z(0.414,0.414,0.171,0.414,0.414)],[F4v(0.414,0.414,0.171,0.414,0.414),F4w(0.414,0.414,0.171,0.414,0.414),F4x(0.414,0.414,0.171,0.414,0.414),F4y(0.414,0.414,0.171,0.414,0.414),F4z(0.414,0.414,0.171,0.414,0.414)],[F5v(0.414,0.414,0.171,0.414,0.414),F5w(0.414,0.414,0.171,0.414,0.414),F5x(0.414,0.414,0.171,0.414,0.414),F5y(0.414,0.414,0.171,0.414,0.414),F5z(0.414,0.414,0.171,0.414,0.414)]),float;
+eigenvalues(m),float;
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

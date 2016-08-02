@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Ajouter une donnée météo</title>
+	</head>
+	<body>
+		<form action="traitement.php" method="POST">
+			<label>Type: </label>
+			<select name="type">
+				<option value="soleil">Soleil</option>
+				<option value="nuages">Nuages</option>
+				<option value="pluie">Pluie</option>
+				<option value="grele">Grêle</option>
+				<option value="neige">Neige</option>
+			</select>
+			<br/>
+			<label>Vitesse du vent: </label>
+			<input type="number" name="vent"/> km/h
+			<br/>
+			<label>Température :</label>
+			<input type="number" name="temperature"/> °C
+			<br/>
+			<label>Date :</label>
+			<input type="date" name="date"/>
+			<br/>
+			<label>Auteur :</label>
+			<input type="text" name="auteur"/>
+			<br/>
+			<input type="submit" value="Ajouter l'observation météo"/>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,87 @@
+#menu-bloc{ /* ou nav car juste une balise nav ici*/
+	background-color: #BBBBBB;
+	border-radius:5px;
+	border-style:dotted;
+	border-width:3px;
+	text-align:center;
+}
+
+#main-bloc p { /*tous les p dans le main bloc*/
+	text-align:justify;
+	text-indent:33px;
+}
+
+#titre-principal{
+	color:red;
+	text-align:center;
+	font-style:italic;
+	text-transform:uppercase;
+}
+
+a{
+	text-decoration:none;
+}
+
+a:visited{
+	color:green;
+}
+
+a:link{
+	color:blue;
+}
+
+body{
+	color:black;
+	font-family:fantasy;
+	font-size:130%;
+}
+
+div.illustration{
+	float:right;
+	border:	solid 2px black;
+	margin-left:10px;
+}
+
+#img0{
+	width:1260px;
+}
+
+#img1{
+	height:200px;
+}
+
+
+section{
+	display:inline-block;
+	border:	solid 1px black;
+	max-width:80%;
+	padding:20px;
+	margin:10px;
+}
+
+.blocss{
+	display:inline-block;
+	border:	solid 1px black;
+	max-width:20%;
+	padding:20px;
+	margin:10px;
+	vertical-align:top;
+}
+
+
+@media screen and (min-width:1024px){
+	.screensize{
+	position:fixed;
+	top:0;
+	right:0;
+	display:inline-block;
+	border:	solid 1px black;
+	max-width:20%;
+	padding:20px;
+	margin:10px;
+	vertical-align:top;
+	background-color:black;
+	color:white;
+	}
+}
+

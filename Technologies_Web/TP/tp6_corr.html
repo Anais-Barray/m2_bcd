@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Compte à rebours (Javascript)</title>
+	</head>
+	<body>
+		<h1>Mon super timer de l'espace !</h1>
+		<input type="number" id="secondes" />
+		<br/>
+		<button onClick="start()">Start</button>
+		<button onClick="stop()">Stop</button>
+		<button onClick="reset()">Reset</button>
+		<br/>
+		<div id="message" style="color: red; font-weight: bold; font-size: 40px; display: none; animation: blink 1s steps(5, start) infinite; -webkit-animation: blink 1s steps(5, start) infinite; -moz-animation: blink 0.5s linear infinite;">
+			Temps écoulé
+		</div>
+
+		<!-- Code Javascript -->
+		<script>
+		var timer;
+		function diminuer() {
+			var champ = document.getElementById('secondes');
+			var secondes = champ.value;
+			console.log(secondes + ' : ' + typeof secondes);
+			var secondesEntieres = parseInt(secondes);
+			console.log(secondesEntieres + ' : ' + typeof secondesEntieres);
+			// décrémentation jusqu'à zéro
+			if (secondesEntieres > 0) {
+				secondesEntieres--;
+				champ.value = secondesEntieres;
+			}
+			if (secondesEntieres == 0) {
+				// on a atteint zéro : affichage du message
+				var message = document.getElementById('message');
+				message.style.display = 'block';
+				// on arrête le timer pour ne pas tourner en boucle
+				stop();
+			}
+		}
+		function start() {
+			console.log("start !");
+			timer = setInterval(diminuer, 1000); // puis une fois par seconde
+		}
+		function stop() {
+			console.log("stop !");
+			clearInterval(timer);
+		}
+		function reset() {
+			console.log("reset !");
+			var message = document.getElementById('message');
+			message.style.display = 'none';
+		}
+		</script>
+	</body>
+</html>

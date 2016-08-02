@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple chat</title>
+    <!-- external libs -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+
+    <!-- my libs -->
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/chat.js"></script>
+    
+  </head>
+  <body>
+    <div id="main">
+      <div class="page-header" id="title">
+        <h1>Le super chat <small>Postez vos messages</small><img class="img-circle" src="http://arbre-a-chat-pas-cher.fr/wp-content/uploads/2014/09/Chat-1.jpg"></h1>
+      </div>
+      
+      <form id="msg-form" method="POST">
+        <div class="form-group">
+          <label for="usr">Nom</label>
+          <input type="text" class="form-control" id="nom" name="nom">
+        </div>
+        <div class="form-group">
+          <label for="comment">Message</label>
+          <textarea class="form-control" rows="5" id="msg" name="msg"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+
+      <br/>
+      <br/>
+
+      <div id="messages"></div>
+      
+    </div>
+  </body>
+</html>

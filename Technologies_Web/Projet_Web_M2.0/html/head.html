@@ -1,0 +1,55 @@
+<?php
+	session_start();
+?>
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Lieux d'intérêt mangastique</title>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" onclick="" />
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+    
+    <header>
+        <br/>
+        <center>
+            <a href="index.php"><img src="images/differents-mangas.jpg" style="max-width:80%; max-height:250px"></a>
+            <h1>Lieux d'intérêt mangastique</h1>
+            
+	<!--LOGIN // LOGOUT-->
+    <?php
+        if (isset($_SESSION['username'])) {
+            echo'
+            <form class="logform" id="logoutform" style="display:block">
+                Bonjour, ' . $_SESSION['username'] . '
+                <button type="button" name="logout" id="logout" class="btn btn-sm btn-primary">Log out</button>
+            </form>
+            ';
+            } else {
+                echo 
+            '<br/><form class="logform" id="loginform" style="display:block">
+                <label for = "id" class="control-label">Identifiant :</label>
+                <input type="text" id="username" name="username"> <br/>
+                <label for = "passwd" class="control-label"> Mot de passe :</label>
+                <input type="password" id="passwd" name="passwd"> <br/>
+                <button type="button" name="login" id="login" class="btn btn-sm btn-primary">Se connecter</button>
+            </form>';
+        }
+    ?>
+		<p id="notif_error" class="alert alert-danger" style="display:none"></p>
+        </center>
+        
+        <div id="nav" >
+            <div class="wrap">
+            <ul>
+              <li><a href="index.php">Accueil</a></li>
+              <li><a href="afficher.php">Liste des lieux</a></li>
+              <li><a href="requetes.php">Rechercher / Ajouter / Supprimer</a></li>
+            </ul>
+            </div>
+        </div>
+    </header>

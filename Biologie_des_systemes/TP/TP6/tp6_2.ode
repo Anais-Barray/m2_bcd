@@ -1,0 +1,19 @@
+#conditions initiales 
+y(0)=0
+z(0)=0
+
+
+#parametres 
+param ky=1, kmy=1, kz=1, kmz=0.5, Kxy=1, Kxz=1, Kyz=0.4, Smax=1, Sy=1, n=30, m=40, ti=1, grandT=1.5, ti2=10, grandT2=5
+
+#equation
+x(t)=Smax * (((t/ti)**m)/((1+(t/ti)**m))) * (1/(1+(t/(ti+grandT))**m)) + Smax * (((t/ti2)**m)/((1+(t/ti2)**m))) * (1/(1+(t/(ti2+grandT2))**m)) 
+y'=ky*(((x(t)/Kxy)**n)/(1+(x(t)/Kxy)**n)) - kmy*y 
+z'=kz*(((x(t)/Kxz)**n)/(1+(x(t)/Kxz)**n)) * (((y/Kyz)**n)/(1+(y/Kyz)**n)) - kmz*z
+
+#auxiliaire
+aux xplot=x(t)
+
+done
+
+
